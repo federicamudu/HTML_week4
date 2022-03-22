@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mia Prima Pagina</title>
+</head>
+<body bgcolor="pink">
+    <p style="text-align: center">
+        La mia prima pagina HTML <!--questo è un commento--> <br />
+
+    </p>
+    <p>
+        <b>Testo in grassetto</b><br />
+        <u>Testo sottolineato</u><br />
+        <i>Testo corsivo</i><br />
+        <b><i>Grassetto corsivo insiem <span style="font-size:30px">Ciao</span></i></b>
+    </p>
+    <p style="color: green">
+        Ciao!      prova con più tab <br> <!--fa visualizzare tutto con un solo spazio, non lo distanzia-->
+        per &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; avere spazio
+    </p>
+    <p contenteditable="true">
+        Prova tu a cambiare il testo
+    </p>
+    <button type="button">Cliccami!</button>
+    <button type="button" onclick="getElementById('pippo').setAttribute('hidden', '');">Nascondi paragrafo</button>
+    <p id="pippo"> Nuovo Paragrafo </p>
+    <h1>Titolo1</h1> <!--titolo dal più grande al più piccolo-->
+    <h2>Titolo2</h2>
+    <h4>Titolo4</h4>
+    <h6>Titolo6</h6>
+    <h3>Aggiungiamo un'immagine</h3>
+    <a href="#ultimoParagrafo">Clicca per andare all'ultimo paragrafo</a>
+    <img src="bleach wallpaper ichigo - 1920x1200.jpg" width="192" height="120" alt="Immagine di Ichigo" title="Ecco il bankai completo" /> <!--alt è la scritta che esce se non carica l'immagine'-->
+    <br />
+    <img src="immagini/Anime howl's moving castle wallpaper for - 1280x800.jpg" />
+    <img src="https://media.pokemoncentral.it/wiki/4/4e/Artwork025_RFVF.png" /> <!--immagine presa dal web-->
+    <!--immagini cliccabili-->
+    <br />
+    <img style="text-align:center" src="immagini/Anime howl's moving castle wallpaper for - 1280x800.jpg" usemap="#miaMappa" />
+    <map name="miaMappa">
+        <area shape="rect" coords="0,0, 500, 500" alt="Nessun reindirizzo" href="PaginaProva.html" />
+    </map>
+
+    <br />
+    <a href="PagineHtlm/PaginaDeiGatti.html" target="_blank">clicca qui per vedere un bel musetto</a>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!--invio di una mail-->
+    <a href="mailto: federicacrystal83@gmail.com">clicca per inviare una mail a federica</a>
+    <br />
+    <h2>Elenco puntato</h2>
+    <ul>
+        <li>prima opzione</li>
+        <li>seconda opzione</li>
+        <li>terza opzione</li>
+        <li>quarta opzione</li>
+    </ul>
+
+    <h2>Elenco numerato</h2>
+    <ol>
+        <li>prima opzione</li>
+        <li>seconda opzione</li>
+        <li>terza opzione</li>
+        <li>quarta opzione</li>
+    </ol>
+    <br />
+    <br />
+    <h2>Tabella</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Prima Colonna</th>
+                <th>Seconda Colonna</th>
+                <th>Terza Colonna</th>
+            </tr>
+        </thead>
+        <tbody style="color: blueviolet">
+            <tr>
+                <td>Riga1 Colonna1</td>
+                <td>Riga1 Colonna2</td>
+                <td>Riga1 Colonna3</td>
+            </tr>
+            <tr>
+                <td>Riga2 Colonna1</td>
+                <td>Riga2 Colonna2</td>
+                <td>Riga2 Colonna3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">footer della tabella</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <br />
+    <br />
+    <!--inserire video-->
+    <!--<video controls="controls">
+    </video>-->
+    <iframe width="1216" height="684" src="https://www.youtube.com/embed/kH0BlHWrILg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <br />
+    <!--bottone con link-->
+    <p>Registrati! Clicca <a href="Registrazione.html">qui</a> i tuoi dati</p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <a name="ultimoParagrafo"></a>
+    <p>Ultimo paragrafo</p>
+</body>
+</html>

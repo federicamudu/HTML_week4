@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registrazione</title>
+</head>
+<body>
+    <h1>Compila la seguente form</h1><br /> 
+                                     <form>
+                                         <label>Nome</label>
+                                         <input type="text" placeholder="es. Mario" /> 
+                                         <br />
+                                         <br />
+                                         <label>Cognome</label>
+                                         <input type="text" placeholder="es. Rossi" />
+                                         <br />
+                                         <br />
+                                         <label>E-mail</label>
+                                         <input type="email" placeholder="mail@mail.com" required/>
+                                         <br />
+                                         <br />
+                                         <label>Password</label>
+                                         <input type="password" pattern="[a-zA-z]{1,3}" title="Inserisci una password corretta!" required />
+                                         <br />
+                                         <br />
+                                         <label>DataNascita</label>
+                                         <input type="date"/>
+                                         <br />
+                                         <br />
+                                         <label>Numero di Telefono</label>
+                                         <input type="tel" />
+                                         <br />
+                                         <br />
+                                         <label>Sesso</label>
+                                         <select>
+                                             <option value="" selected>Seleziona un'opzione</option>
+                                             <option value="1">F</option>
+                                             <option value="2">M</option>
+                                             <option value="3">Non voglio dichiararlo</option>
+                                         </select>
+                                         <br />
+                                         <br />
+                                         <label>Sesso<input type="radio" value="1" name="sesso" />F</label>
+                                         <label><input type="radio" value="2" name="sesso" />M</label>
+                                         <label><input type="radio" value="3" name="sesso" checked />Non voglio dichiararlo</label>
+                                         <br />
+                                         <br />
+                                         <label>Lingue conosciute</label>
+                                         <label><input type="checkbox" name="lingua" value="1" />Italiano</label>
+                                         <label><input type="checkbox" name="lingua" value="2" />Inglese</label>
+                                         <label><input type="checkbox" name="lingua" value="3" />Francese</label>
+                                         <br />
+                                         <br />
+                                         <input type="submit" value="Conferma Registrazione" />
+                                         <input type="reset" value="Annulla!" />
+                                     </form>
+</body>
+</html>
