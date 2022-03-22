@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Aggiungi un Libro</title>
+    <link rel="icon" type="image/x-icon" href="immagini/favicon.ico" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body bgcolor="beige">
+    <img style="text-align:left" src="immagini/icon_books.jpg" width="100" height="100" usemap="#Home" />
+    <map name="Home">
+        <area shape="rect" coords="0,0,100,100" alt="Nessun Reindirizzo" href="Index.html" target="_blank" />
+    </map>
+    <h2>Inserisci di seguito il tuo libro</h2>
+    <br />
+    <form>
+        <label>Titolo del Libro:</label>
+        <input type="text" placeholder="es. Il Piccolo Principe" />
+        <br />
+        <br />
+        <label>Autore:</label>
+        <input type="text" placeholder="es. Antoine de Saint-Exupéry" />
+        <br />
+        <br />
+        <label>Codice ISBN:</label>
+        <input type="number" min="0" max="13" />
+        <br />
+        <br />
+        <label>Disponibilità:<input type="radio" value="1" name="disponibilita" />Disponibile</label>
+        <label><input type="radio" value="2" name="disponibilita" />Non Disponibile</label>
+        <br />
+        <br />
+        <input type="submit" value="Conferma Registrazione" />
+        <input type="reset" value="Annulla!" />
+    </form>
+
+</body>
+</html>

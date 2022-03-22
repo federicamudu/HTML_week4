@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<!--Realizzare una pagina Web statica specificando i seguenti punti:
+1) HomePage
+- inserire un logo
+- posizionare logo e titolo della pagina in alto sulla stessa linea
+- barra di navigazione verticale con link: Home, Aggiungi Libro.
+2) Aggiungi libro
+- creare una form per l'inserimento di titolo, autore, codice ISBN, disponibile/non
+disponibile.
+Input di titolo e autore devono essere di tipo testo, codice ISBN deve essere un codice
+numerico di 13 cifre,
+disponibile/non disponibile deve essere scelto tramite radio button.-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>List of Books</title>
+    <link rel="icon" type="image/x-icon" href="immagini/favicon.ico" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div ><img style="text-align:left" src="immagini/icon_books.jpg" width="100" height="100" usemap="#Home" /><img style="float:right" src="immagini/Libro-scorrere-gif.gif" height="50" width="100" /></div>
+    
+    
+    
+    <h1 style="text-align: center"><i>List of Books</i> <img src="immagini/libri10.jpg" width="100" height="100" alt="Immagine non disponibile" /></h1>
+    <map name="Home">
+        <area shape="rect" coords="0,0,100,100" alt="Nessun Reindirizzo" href="Index.html" />
+    </map>
+    <p>
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="AggiungiLibroForm.html" target="_blank">Aggiungi un libro alla lista</a></li>
+        </ul>
+    </p>
+    <h3>Libri aggiunti precedentemente</h3>
+    <table border="1" bgcolor="white">
+        <thead style="color: midnightblue">
+            <tr class="red">
+                <th>Titolo</th>
+                <th>Autore</th>
+                <th>Codice ISBN</th>
+                <th>Disponibilità</th>
+                <th>Azioni</th>
+            </tr>
+        </thead>
+        <tbody style="color: slateblue; text-align:left">
+            <tr>
+                <td>Il piccolo principe</td>
+                <td>Antoine de Saint-Exupéry</td>
+                <td>9788854172388</td>
+                <td>Sì</td>
+                <td><img src="immagini/modify.png" alt="Non Disponibile" width="50" height="50" /><img src="immagini/delete.png" alt="Non Disponibile" width="50" height="50" /></td>
+            </tr>
+            <tr>
+                <td>Romeo e Giulietta</td>
+                <td>William Shakespeare</td>
+                <td>1254963025647</td>
+                <td>Sì</td>
+                <td><img src="immagini/modify.png" alt="Non Disponibile" width="50" height="50" /><img src="immagini/delete.png" alt="Non Disponibile" width="50" height="50" /></td>
+
+            </tr>
+            <tr>
+                <td>Frankenstein</td>
+                <td>Mary Shelley</td>
+                <td>1254900005647</td>
+                <td>No</td>
+                <td><img src="immagini/modify.png" alt="Non Disponibile" width="50" height="50" /><img src="immagini/delete.png" alt="Non Disponibile" width="50" height="50" /></td>
+
+            </tr>
+        </tbody>
+        <tfoot style="color: slateblue">
+            <tr>
+                <td colspan="3">Totale</td>
+                <td>2</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
